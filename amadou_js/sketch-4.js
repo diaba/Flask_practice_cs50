@@ -13,9 +13,7 @@ function draw() {
   frameRate(15); //set frame rate to 15
 
   //moon
-  fill(255);
-  stroke(0);
-  circle(350, 50, 100);
+  drawMoon();
 
   //overlap by navy circle for crescent moon
   stroke("navy");
@@ -72,4 +70,10 @@ function draw() {
   //displays the x and y position of the mouse on the canvas
   fill(255); //white text
   text(`mouseX: ${mouseX}, mouseY: ${mouseY}`, 20, 20);
+
+  function drawMoon() {
+    fill(255);
+    stroke(0);
+    circle(350, 50, 100);
+  }
 }
